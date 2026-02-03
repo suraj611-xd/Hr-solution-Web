@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RAMANUJAM & ASSOCIATES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav>
+      <h2>Ramanujam & Associates</h2>
+      <div>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <a href="#admin">Admin</a>
+
+        <div class="toggle" onclick="toggleMode()">
+          <span id="icon">🌙</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <h1>Complete HR Consultants, Payroll, PF & ESI Compliance Services</h1>
+        <p>
+          End-to-end Payroll Outsourcing, Statutory Compliance & Virtual HR for
+          Indian Businesses.
+        </p>
+        <a href="#contact" class="btn">Request Free Consultation</a>
+      </div>
+    </div>
+
+    <section id="services">
+      <h2>Our Core Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Payroll Outsourcing</h3>
+          <p>Accurate salary processing & payslips.</p>
+        </div>
+        <div class="card">
+          <h3>PF & ESI Management</h3>
+          <p>Provident Fund & ESI registration and filings.</p>
+        </div>
+        <div class="card">
+          <h3>Statutory Compliance</h3>
+          <p>Labour laws, PT, LWF & returns.</p>
+        </div>
+        <div class="card">
+          <h3>HR Outsourcing</h3>
+          <p>End-to-end HR operations.</p>
+        </div>
+        <div class="card">
+          <h3>Leave & Attendance</h3>
+          <p>Automated leave and attendance tracking.</p>
+        </div>
+        <div class="card">
+          <h3>Payroll Audits</h3>
+          <p>Compliance and payroll health checks.</p>
+        </div>
+        <div class="card">
+          <h3>Liaison works with</h3>
+          <p>Pf and ESI Departments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <h2>Trusted by Leading Companies</h2>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">Medicover Hospitals</div>
+          <div class="slide">Konnect Diagnostics</div>
+          <div class="slide">AthaYantra Corporation pvt LTD</div>
+          <div class="slide">Annexacc Software Solutions ind pvt</div>
+          <div class="slide">BISF</div>
+          <div class="slide">Drs International Schools</div>
+          <div class="slide">IAEC</div>
+          <div class="slide">I con Wave tech pvt LTD</div>
+          <div class="slide">Katikaneni Groups</div>
+          <div class="slide">Profin tech pvt LTD</div>
+          <div class="slide">Surabhi hotel groups</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Request a Callback</h2>
+      <div class="grid">
+        <div class="card">
+          <form
+            onsubmit="
+              event.preventDefault();
+              alert('Request sent successfully!');
+            "
+          >
+            <input type="text" placeholder="Company Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <textarea
+              placeholder="Your HR / Payroll Requirement"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="admin" class="admin">
+      <h2>Admin Dashboard</h2>
+      <div class="grid">
+        <div class="card">Total Clients: 128</div>
+        <div class="card">Active Payrolls: 92</div>
+        <div class="card">New Enquiries: 14</div>
+        <div class="card">Monthly Compliance Reports</div>
+      </div>
+    </section>
+
+    <div class="footer-info">
+      <div class="footer-grid">
+        <div>
+          <h3>About Ramanujam & Associates</h3>
+          <p>
+            Ramanujam & Associates is a leading HR outsourcing and compliance
+            partner helping businesses manage Payroll, PF, ESI, and labour law
+            compliance across India.
+          </p>
+        </div>
+
+        <div>
+          <h3>Office Address</h3>
+          <p>
+            Hyderabad<br />
+            Telangana - 500016, India
+          </p>
+          <p>
+            📞 +91 98483 XXXXX<br />
+            ✉️ info@ramanujamassociates.com
+          </p>
+        </div>
+
+        <div>
+          <h3>Opening Hours</h3>
+          <ul>
+            <li>Mon - Fri : 9:30 AM – 6:30 PM</li>
+            <li>Saturday : 10:00 AM – 2:00 PM</li>
+            <li>Sunday : Closed</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#services">HR Services</a></li>
+            <li><a href="#contact">Request Callback</a></li>
+            <li><a href="#clients">Our Clients</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Ramanujam & Associates. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMode() {
+        document.body.classList.toggle("dark");
+        const icon = document.getElementById("icon");
+        if (document.body.classList.contains("dark")) {
+          icon.textContent = "☀️";
+        } else {
+          icon.textContent = "🌙";
+        }
+      }
+    </script>
+  </body>
+</html>
